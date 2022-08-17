@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 45 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g transform="matrix(1.33333,0,0,1.33333,-166.656,-175.956)">
+        <text x="141.84px" y="163.2px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">C</text>
+        <text x="149.04px" y="156.24px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:8px;">–</text>
+        <text x="131.76px" y="180.24px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">O</text>
+    </g>
+    <g transform="matrix(1.33333,0,0,1.33333,-166.656,-175.956)">
+        <text x="132px" y="145.92px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">R</text>
+        <text x="139.44px" y="138.96px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:8px;">2</text>
+    </g>
+    <g transform="matrix(-0.846305,-1.03031,1.03031,-0.846305,-166.656,-175.956)">
+        <text x="-229.444px" y="-5.247px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">:</text>
+    </g>
+    <g transform="matrix(-0.66685,1.15459,1.15459,0.66685,-667.711,-562.591)">
+        <path d="M134.626,674.41L142.964,674.41" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.72px;"/>
+    </g>
+    <g transform="matrix(-0.666693,1.15469,1.15469,0.666693,-660.035,-566.311)">
+        <path d="M138.65,674.16L146.41,674.16" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.72px;"/>
+    </g>
+    <g transform="matrix(-0.666871,-1.15458,-1.15458,0.666871,912.879,-273.773)">
+        <path d="M136.641,691.32L144.679,691.32" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.72px;"/>
+    </g>
+</svg>

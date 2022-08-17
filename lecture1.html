@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Первая лекция по планированию многостадийных синтезов посвящена введению в предмет. На примере первых схем синтеза поясняется понятие трансформ, ретрон, синтон и синтетический эквивалент. На примере схемы линейного синтеза показан арифметический демон, а пример выхода реакции объясняет, почему схемы конвергентного синтеза предпочтительнее линейных. Дана общая стратегия преобразований.">
+    <meta name="keywords" content="планирование синтезов, трансформ, ретрон, синтон, синтетический эквивалент, арифметический демон">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Лекция 1. Введение в планирование синтезов</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 border-bottom">
+        <a href="index.html" class="d-flex align-items-center col-md-4 mb-2 mb-md-0 text-dark text-decoration-none"><img src="img/star.svg"  class="bi me-2" alt="логотип" style="height: 2em;"> Планирование синтезов</a>
+  
+        <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 link-dark"><img src="img/contents.svg" alt="оглавление" style="height: 2em;"> Оглавление</a></li>
+          <li><a href="about.html" class="nav-link px-2 link-dark"><img src="img/about.svg" alt="о проекте" style="height: 2em;"> О проекте</a></li>
+        </ul>
+      </header>
+    </div>
+    <main>
+    <div class="container">
+      <h2 class="mt-2">Лекция 1. Введение в планирование синтезов</h2>        
+      <p class="mt-4">Предметом лекций является планирование многоэтапных синтезов с использованием стратегии трансформов.</p>
+      <p>Основные идеи почерпнуты из книги E.J. Corey, Xue-Min Cheng <i>"The logic of chemical synthesis"</i> [ISBN: 978-0-471-11594-6], а иллюстрирующие их примеры из книг:</p>
+      <ul>
+        <li>S. Warren <i>"Designing organic synthesis. The disconnection approach"</i> [ISBN: 978-8126511464];</li>
+        <li>S. Warren <i>"Organic synthesis. The disconnection’s approach"</i> [ISBN: 978-0-470-71236-8];</li>
+        <li>S. Warren <i>"Workbook for Organic Synthesis: The Disconnection Approach"</i> [ISBN: 978-0470712269];</li>
+        <li>J. Furhop, G. Penzlin <i>"Organic Synthesis; Concepts, Methods, Starting Materials."</i> [ISBN: 1-56081-823-9];</li>
+        <li>Tse-Lok Ho <i>"Tandem organic reaction"</i> [ISBN: 0-471-57022-2];</li>
+        <li>K.C. Nicolaou, E.J. Sorensen <i>"Classics in Total Synthesis: Targets, Strategies, Methods"</i> [ISBN: 978-3-527-29231-8];</li>
+        <li>и др.</li>
+      </ul>
+      <p>Пять недостатков лекционного метода обучения:</p>
+      <ol>
+        <li>Монолог;</li>
+        <li>Различный уровень подготовки слушателей;</li>
+        <li>Невозможность слушателя долго быть сосредоточенным (потеря внимания);</li>
+        <li>Два дела сразу;</li>
+        <li>Ошибки лектора.</li>
+      </ol>
+      <div class="card bg-light">
+        <div class="card-body">
+          <div><i>"… ничто не может заменить настоящую самостоятельную работу, когда ученик остается один на один с самим собой и уже не может рассчитывать на помощь извне; именно эти минуты и есть минуты истинного знания. Чтобы повысить ихиценность и сделать их по-настоящему плодотворными, вам нужно дать учащимся хороший предмет для размышлений."</i></div>
+          <div class="text-muted"><small><i>П. Арно</i></small></div>
+        </div>
+      </div>
+      <p class="mt-3">Изложение будет проводиться в рамках классической электронной теории, метод молекулярных орбиталей предполагается использовать только там, где без него невозможно обойтись. Выбрана следующая система обозначения углеродной цепи - зигзагообразные формулы (молекула изображена в заторможенной конформации), например, <i>син-</i> и <i>анти-</i>2,3-дигидроксипентан: </p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-1.svg" alt="заторможенные конформации 2,3-дигидроксипентана" width="288" height="82"></p>
+      <p>Для указания перемещения пары электронов или частицы с парой электронов используется следующая стрелка</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-2.svg" alt="перемещение пары электронов" width="64" height="20"></p>
+      <p>А для указания перемещения одного электрона или частицы с неспаренным электроном используется следующая стрелка</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-3.svg" alt="перемещение одного электрона" width="64" height="20"></p>
+      <p>Для описания перемещения электронов в молекуле используется метод резонанса Полинга.</p>
+
+      <h3 class="mt-5">Ретросинтетический анализ</h3>
+      <p class="mt-4">Целевые молекулы TM или цели TGT.</p>
+      <p><b>Ретросинтетический анализ</b> это процедура планирования многостадийного синтеза, в процессе проведения которой химик мысленно переходит от целевой молекулы через ряд как правило более простых структур к доступным исходным соединениям.</p>
+      <p>Этот мысленный переход осуществляется путем последовательного ответа на два вопроса:</p>
+      <ol>
+        <li>Из каких исходных соединений и при помощи какой реакции можно в одну стадию получить целевую молекулу?</li>
+        <li>Доступны ли эти соединения?</li>
+      </ol>
+      <div class="card bg-light">
+        <div class="card-body">
+          <div><i>"Посредственный учитель излагает. Хороший учитель объясняет. Выдающийся учитель показывает. Великий учитель вдохновляет."</i></div>
+          <div class="text-muted"><small><i>Уильям Артур Уорд</i></small></div>
+        </div>
+      </div>
+      <p class="mt-3">Пример (1983 г, Snider):</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-4.svg" alt="пример ретросинтетического анализа" width="350" height="135"></p>
+      <p>Анализ 1</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-5.svg" alt="анализ 1" width="540" height="620"></p>
+      <p>Анализ 2</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-6.svg" alt="анализ 2" width="450" height="770"></p>
+      <p>Анализ 3</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-7.svg" alt="анализ 3" width="250" height="580"></p>
+      <p>Анализ 4</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-8.svg" alt="анализ 4" width="365" height="435"></p>
+      <p><b>Трансформ</b> это мысленно проводимая реакция обратная прямой реакции синтеза. Трансформам присваивают имена прямых реакций. Для того чтобы отличить трансформ от прямой реакции используют двойную стрелку:</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-9.svg" alt="двойная стрелка" width="100" height="15"></p>
+
+      <h3 class="mt-5">Арифметический демон и борьба с ним</h3>
+      <p class="mt-4">Допустим, у нас имеется <i>линейная</i> схема синтеза целевой молекулы в 10 стадий: </p>
+      <p>A<sub>1</sub> → A<sub>2</sub> → A<sub>3</sub> → … → A<sub>10</sub> → <b>TM</b></p>
+      <p>Допустим, выход реакции на каждой отдельной стадии составляет 60 или 90%. Тогда общий выход всего синтеза будет равен:</p>
+      <p>0.6<sup>10</sup> x 100 = 0.6%</p>
+      <p>0.9<sup>10</sup> x 100 = 34.8%</p>
+      <p>Схемы синтеза называют <i>конвергентными</i>, если в них синтезируются два сложных предшественника целевой молекулы:</p>
+      <p>A<sub>1</sub> → A<sub>2</sub> → A<sub>3</sub> → … → A<sub>6</sub></p>
+      <p>5 стадий</p>
+      <p>B<sub>1</sub> → B<sub>2</sub> … → B<sub>5</sub></p>
+      <p>4 стадии</p>
+      <p>A<sub>6</sub> + B<sub>5</sub> → <b>TM</b></p>
+      <p>1 стадия, итого также 10 стадий, однако общий выход составит уже: </p>
+      <p>0.6<sup>6</sup> x 100 = 4.6%</p>
+      <p>0.9<sup>6</sup> x 100 = 53.1%</p>
+      <p>Вывод - конвергентные схемы синтеза при прочих равных условиях предпочтительнее.</p>
+
+      <h3 class="mt-5">Классификация трансформов, синтоны и их синтетические эквиваленты. Ретроны</h3>
+      <p class="mt-4"><b>Синтоны</b> это продукты трансформов - молекулы, катионы, анионы, радикалы, карбены и пр.</p>
+      <p><b>Синтетические эквиваленты</b> это реагенты, выполняющие роль синтонов в реакциях.</p>
+      <p><b>Ретрогны</b> это необходимые и достаточные элементы в строении молекулы, позволяющие проводить определенный трансформ. Ретронам присваивают название трансформов.</p>
+      <p>1. Расчленение (Disconnection, D)</p>
+      <p>1.1. Расчленение цикла (Ring disconnection, RGD)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-10.svg" alt="расчленение цикла" width="595" height="340"></p>
+      <p>1.2. Расчленение углеродной цепи (Chain disconnection, CHD)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-11.svg" alt="расчленение углеродной цепи" width="640" height="355"></p>
+      <p>1.3. Отщепление функциональной группы (Functional group disconnection, FGD)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-12.svg" alt="отщепление функциональной группы" width="370" height="215"></p>
+      <p>2. Сочленение (Reconnection, R)</p>
+      <p>2.1. Образование циклов (Ring reconnection, RGR)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-13.svg" alt="образование циклов" width="660" height="780"></p>
+      <p>2.2. Введение функциональной группы (Functional group addition, FGA)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-14.svg" alt="введение функциональной группы" width="580" height="625"></p>
+      <p>3. Замена одной функциональной группы на другую (Functional group interchange, FGI)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-15.svg" alt="замена одной функциональной группы на другую" width="400" height="490"></p>
+      <p>4. Перемещение функциональной группы (Functional group transition, GFT)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-16.svg" alt="перемещение функциональной группы" width="515" height="245"></p>
+      <p>5. Перегруппировка (Rearangement, Rt)</p>
+      <p class="text-center"><img class="img-fluid" src="img/lecture1/1-17.svg" alt="перегруппировка" width="625" height="720"></p>       
+    </div>
+  </main>
+
+  <footer class="footer mt-4 py-2 border-top">
+    <div class="container">
+      <div class="pt-2 pb-2"><img src="img/letter.svg" alt="конверт" style="height: 2em;"> mh.ko@ya.ru</div>
+    </div>
+  </footer>
+
+  </body>
+</html>

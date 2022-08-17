@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g transform="matrix(1.33333,0,0,1.33333,-209.924,-956.308)">
+        <path d="M177.6,735.84L211.68,735.84" style="fill:none;fill-rule:nonzero;stroke:black;stroke-width:0.72px;"/>
+    </g>
+    <g transform="matrix(1.2958,0.314133,0.314133,-1.2958,-433.28,913.062)">
+        <path d="M203.419,736.773L211.569,736.773L204.324,733.041L205.271,735.246L203.419,736.773Z" style="stroke:black;stroke-width:0.72px;"/>
+    </g>
+    <g transform="matrix(1.33333,0,0,1.33333,-206.924,-116.628)">
+        <text x="158.64px" y="109.92px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:10px;">Z</text>
+    </g>
+    <g transform="matrix(1.42853,0,0,1.33333,-227.762,-116.628)">
+        <text x="218.88px" y="109.68px" style="font-family:'Arial-ItalicMT', 'Arial', sans-serif;font-style:italic;font-size:10px;">E</text>
+    </g>
+    <g transform="matrix(1.33333,0,0,1.33333,-209.924,-116.628)">
+        <text x="189.36px" y="99.12px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">hν</text>
+    </g>
+    <g transform="matrix(1.33333,0,0,1.33333,-209.924,-116.628)">
+        <text x="191.52px" y="117.84px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:10px;">I</text>
+        <text x="194.4px" y="120.48px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:6px;">2</text>
+    </g>
+</svg>
